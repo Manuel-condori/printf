@@ -3,3 +3,5 @@ Printf project
 Prototype
 int_printf(const char *format, ...);
 
+Authorized functions and macros:
+write (man 2 write)
