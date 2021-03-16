@@ -9,11 +9,13 @@
 printer_t get_printer(char format)
 {
 	int i;
-	int cant_formats = 8;
+<<<<<<< HEAD
+	int cant_formats = 12;
 	printer_t printers[] = {
 		{'c', print_char},
 		{'s', print_string},
 		{'S', print_string},
+		{'b', print_binary},
 	};
 
 	for (i = 0; i < cant_formats; i++)
