@@ -9,10 +9,12 @@
 printer_t get_printer(char format)
 {
 	int i;
-	int cant_formats = 2;
+	int cant_formats = 4;
 	printer_t printers[] = {
 		{'c', print_char},
 		{'s', print_string},
+		{'d', print_dec},
+		{'i', print_dec},
 	};
 
 	for (i = 0; i < cant_formats; i++)
