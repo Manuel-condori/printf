@@ -9,7 +9,6 @@
 printer_t get_printer(char format)
 {
 	int i;
-<<<<<<< HEAD
 	int cant_formats = 12;
 	printer_t printers[] = {
 		{'c', print_char},
