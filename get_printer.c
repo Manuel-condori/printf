@@ -8,13 +8,15 @@
  */
 printer_t get_printer(char format)
 {
-	int i, cant_formats = 1;
+	int i;
+	int cant_formats = 2;
 	printer_t printers[] = {
 		{'c', print_char},
+		{'s', print_string},
 	};
 
 	for (i = 0; i < cant_formats; i++)
-		if (printers[i].format == format)/*compara con el formato selecionado */
+		if (printers[i].format == format)
 			return (printers[i]);
 	return (printers[i - 1]);
 }
