@@ -13,7 +13,6 @@ printer_t get_printer(char format)
 	printer_t printers[] = {
 		{'c', print_char},
 		{'s', print_string},
-		{'S', print_str},
 		{'b', print_binary},
 		{'d', print_dec},
 		{'i', print_dec},
