@@ -8,10 +8,10 @@
  *
  * Return: String Length.
  */
-int print_string(va_list *params)
+int print_string(va_list *s)
 {
 	int length = 0;
-	char *str = va_arg(*params, char *);
+	char *str = va_arg(*s, char *);
 
 	if (str == NULL)
 		str = "(null)";
