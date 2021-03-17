@@ -15,6 +15,8 @@ printer_t get_printer(char format)
 		{'s', print_string},
 		{'S', print_string},
 		{'b', print_binary},
+		{'d', print_dec},
+		{'i', print_dec},
 	};
 
 	for (i = 0; i < cant_formats; i++)
